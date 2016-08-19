@@ -1,0 +1,54 @@
+// To add a clearfix via a SCSS file, use `@extend .clearfix`
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.unlimited-row {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Swap Foundations ::last-child/end class functionality
+[class*="column"] + [class*="column"]:last-child {
+  float: left;
+}
+
+[class*="column"] + [class*="column"].end {
+  float: right;
+}
+
+// Fixes column-centering after fixing last column float
+.column.small-centered:last-child,
+.columns.small-centered:last-child {
+  clear: both;
+  float: none;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .column.medium-centered:last-child,
+  .columns.medium-centered:last-child {
+    clear: both;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .column.large-centered:last-child,
+  .columns.large-centered:last-child {
+    clear: both;
+    float: none;
+  }
+}

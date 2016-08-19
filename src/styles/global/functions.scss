@@ -1,0 +1,20 @@
+$base_pixel_size: 16;
+
+@function parseInt($n) {
+  @return $n / ( $n * 0 + 1 );
+}
+
+@function px2rem($px_value) {
+  $unit: unit($px_value);
+  $value: parseInt($px_value);
+  @if ('px' == $unit) {
+    @return ( $value / $base_pixel_size ) + rem;
+  } @else {
+    @return $px_value;
+  }
+}
+
+// Assumes px value, with no unit
+@function getRem( $value ) {
+  @return ( $value / $base_pixel_size ) + rem;
+}

@@ -1,0 +1,44 @@
+// Colors
+$black: #000;
+$pseudo-black: #333;
+$dark-grey: #444;
+$grey: #888;
+$light-grey: #ccc;
+$white: #fff;
+
+// Transparent Colors
+
+// Color Aliases
+$font-color: $pseudo-black;
+$heading-color: $pseudo-black;
+
+$link-color: $grey;
+$link-hover-color: $dark-grey;
+
+// Fonts
+$open-sans: 'Open Sans', sans-serif;
+$lato: 'Lato', sans-serif;
+
+$body-font-stack: $open-sans;
+$heading-font-stack: $lato;
+
+// Images
+
+// Helper class variables
+$helper-font-color: 'white', 'light-grey'; // The color and colors arrays must match! Color holds the name, colors holds the value.
+$helper-font-colors: $white, $light-grey; // The color and colors arrays must match! Color holds the name, colors holds the value.
+$helper-font-size: 12, 14, 16, 18;
+$helper-font-weight: 300, 400, 600, 700;
+$helper-margin-values: 0, 10, 20, 30, 40, 50;
+$helper-padding-values: 0, 10, 20, 30, 40, 50;
+
+// Our custom column counts
+// Requires "global/foundation-extensions" to be loaded in main.scss
+// NOTE: Works best with any number larger than 3, can be a comma separated list.
+$custom-column-counts: 5;
+/**
+Creates classes matching the following formats:
+.small-3-5th // Will cover 3/5
+.small-offset-1-5th // Will offset 1/5
+.small-5-5th // This works too, if you need it
+*/

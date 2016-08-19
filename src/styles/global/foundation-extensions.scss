@@ -1,0 +1,48 @@
+@each $col-count in $custom-column-counts {
+  $single-width: 100 / $col-count;
+
+  @for $i from 1 through $col-count {
+    .small-#{$i}-#{$col-count}th {
+      width: $single-width * $i * 1%;
+    }
+  }
+  @for $i from 1 to $col-count {
+    .small-offset-#{$i}-#{$col-count}th {
+      margin-left: $single-width * $i * 1%;
+    }
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  @each $col-count in $custom-column-counts {
+    $single-width: 100 / $col-count;
+
+    @for $i from 1 through $col-count {
+      .medium-#{$i}-#{$col-count}th {
+        width: $single-width * $i * 1%;
+      }
+    }
+    @for $i from 1 to $col-count {
+      .medium-offset-#{$i}-#{$col-count}th {
+        margin-left: $single-width * $i * 1%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  @each $col-count in $custom-column-counts {
+    $single-width: 100 / $col-count;
+
+    @for $i from 1 through $col-count {
+      .large-#{$i}-#{$col-count}th {
+        width: $single-width * $i * 1%;
+      }
+    }
+    @for $i from 1 to $col-count {
+      .large-offset-#{$i}-#{$col-count}th {
+        margin-left: $single-width * $i * 1%;
+      }
+    }
+  }
+}
