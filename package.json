@@ -1,13 +1,13 @@
 {
-  "name": "Salty Frontend Bootstrap",
+  "name": "salty-frontend-bootstrap",
   "version": "1.0.0",
-  "description": "Defaults for ",
+  "description": "Defaults for a frontend website.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "syntacticNaCl",
+  "license": "MIT",
   "dependencies": {
   },
   "devDependencies": {

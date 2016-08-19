@@ -1,11 +1,11 @@
 // global
 @import "variables";
-@import "global/functions"
-@import "global/mixins"
+@import "global/functions";
+@import "global/mixins";
 // @import "global/foundation-extensions"; // uncomment to add custom column counts from variables
-@import "global/typography"
-@import "global/utility-classes"
-@import "global/helper-classes"
+@import "global/typography";
+@import "global/utility-classes";
+@import "global/helper-classes";
 
 // components
 @import "components/header";

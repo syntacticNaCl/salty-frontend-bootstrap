@@ -1,5 +1,8 @@
 {
-    "name" : "Salty Frontend Bootstrap",
+    "name" : "salty-frontend-bootstrap",
+    "version": "1.0.0",
+    "description": "Dependencies for a frontend website.",
+    "author": "syntacticNaCl",
     "moduleType": [
         "node"
     ],
