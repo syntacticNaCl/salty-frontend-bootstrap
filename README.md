@@ -11,7 +11,8 @@ All that needs to be setup is to run the following:
 ```sh
 npm install && bower install
 ```
-Running the default gulp task will all of the necessary tasks and then the
+**Might need to be done as sudo if npm install fails.**
+
+Running the default gulp task will run all of the necessary tasks and then the
 watcher.
 
-**Might need to be done as sudo if npm install fails.**
